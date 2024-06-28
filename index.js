@@ -51,10 +51,5 @@ app.post('/delete/:filename', (req, res) => {
     fs.unlink(filePath, (err) => {
         res.redirect('/');
     });
-}); 
-
-
-
-app.listen(3000); 
-
-
+});
+app.listen(3000);
